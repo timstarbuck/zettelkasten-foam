@@ -1,6 +1,6 @@
-# Fundamentals Certifications
+# Fundamentals Certifications - Describe Cloud Concepts
 
-[Certification Overview](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/)
+[Learn Path](https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
 
 #### Define cloud computing.
 > Cloud computing is the delivery of computing services over the internet. Computing services include common IT infrastructure such as virtual machines, storage, databases, and networking. Cloud services also expand the traditional IT offerings to include things like Internet of Things (IoT), machine learning (ML), and artificial intelligence (AI).
