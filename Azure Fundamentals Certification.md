@@ -1,6 +1,7 @@
 # Azure Fundamentals Certification
 
 [Learn Path Overview](https://learn.microsoft.com/en-us/collections/n6ga8m0jkgrwk){:target="_blank"}
+
 [Certification Details](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/){:target="_blank"}
 
 [[Fundamentals Certifications - Describe Cloud Concepts]]
