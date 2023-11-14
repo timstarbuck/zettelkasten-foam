@@ -1,6 +1,6 @@
 # Fundamentals Certifications - Describe Azure architecture and services
 
-[Learn Path](https://learn.microsoft.com/en-us/training/paths/azure-fundamentals-describe-azure-architecture-services/)
+[Learn Path](https://learn.microsoft.com/en-us/training/paths/azure-fundamentals-describe-azure-architecture-services/){:target="_blank"}
 
 **Describe Azure regions, region pairs, and sovereign regions**
 > Region Pairs: Most Azure regions are paired with another region within the same geography (such as US, Europe, or Asia) at least 300 miles away.
