@@ -185,3 +185,48 @@ az storage container policy create
   --account-key <storage account key> 
   --account-name <storage account name> 
 ```
+
+**Explore Microsoft Graph**
+
+* Explain the benefits of using Microsoft Graph.
+* Perform operations on Microsoft Graph by using REST and SDKs.
+* Apply best practices to help your applications get the most out of Microsoft Graph.
+
+![MS Graph Overview](../attachments/MIcrosoftgraph.png)
+
+* The Microsoft Graph API offers a single endpoint, https://graph.microsoft.com. You can use REST APIs or SDKs to access the endpoint. Microsoft Graph also includes a powerful set of services that manage user and device identity, access, compliance, security, and help protect organizations from data leakage or loss.
+* Microsoft Graph connectors work in the incoming direction, delivering data external to the Microsoft cloud into Microsoft Graph services and applications, to enhance Microsoft 365 experiences such as Microsoft Search. Connectors exist for many commonly used data sources such as Box, Google Drive, Jira, and Salesforce.
+* Microsoft Graph Data Connect provides a set of tools to streamline secure and scalable delivery of Microsoft Graph data to popular Azure data stores. The cached data serves as data sources for Azure development tools that you can use to build intelligent applications.
+
+```{HTTP method} https://graph.microsoft.com/{version}/{resource}?{query-parameters}```
+
+The Microsoft Graph API defines most of its resources, methods, and enumerations in the OData namespace, microsoft.graph, in the [Microsoft Graph metadata](https://learn.microsoft.com/en-us/graph/traverse-the-graph#microsoft-graph-api-metadata). A few API sets are defined in their sub-namespaces, such as the [call records API](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-api-overview) which defines resources like callRecord in microsoft.graph.callRecords.
+
+Microsoft Graph currently supports two versions: v1.0 and beta.
+
+Query parameters can be OData system query options, or other strings that a method accepts to customize its response.
+
+[Microsoft Graph REST API v1.0 reference](https://learn.microsoft.com/en-us/graph/api/overview)
+
+**Apply best practices to Microsoft Graph**
+
+**Authentication**
+To access the data in Microsoft Graph, your application needs to acquire an OAuth 2.0 access token, and present it to Microsoft Graph in either of the following methods:
+
+* The HTTP Authorization request header, as a Bearer token
+* The graph client constructor, when using a Microsoft Graph client library
+  
+Use the Microsoft Authentication Library API, MSAL to acquire the access token to Microsoft Graph.
+
+**Consent and authorization**
+* Use least privilege
+* Use the correct permission type based on scenarios.
+* Consider the end user and admin experience.
+* Consider multi-tenant application
+
+**Handle responses effectively**
+* Pagination - Your application should always handle the possibility that the responses are paged in nature, and use the ```@odata.nextLink``` property to obtain the next paged set of results, until all pages of the result set have been read.
+* Evolvable enumerations - By default, a GET operation returns only known members for properties of evolvable enum types and your application needs to handle only the known members. If you design your application to handle unknown members as well, you can opt in to receive those members by using an HTTP Prefer request header.
+
+**Storing data locally**
+Your application should ideally make calls to Microsoft Graph to retrieve data in real time as necessary. You should only cache or store data locally necessary for a specific scenario, and if that use case is covered by your terms of use and privacy policy, and doesn't violate the Microsoft APIs Terms of Use. Your application should also implement proper retention and deletion policies.
