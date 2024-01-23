@@ -31,7 +31,7 @@ From strongest to weakest consistency:
 * Consistent prefix
 * Eventual
 
-![Consistenty graphic](attachments/cosmos_consistency.png)
+![Consistenty graphic](../attachments/cosmos_consistency.png)
 
 The default consistency level configured on your account applies to all Azure Cosmos DB databases and containers under that account. All reads and queries issued against a container or a database use the specified consistency level by default.
 
