@@ -129,3 +129,4 @@ Class C network
 * /29 (255.255.255.248) gives you eight IPs. If you buy a corporate internet connection from an ISP, it’s common for you to get a block of eight public IPs with it.
 * /24 (255.255.255.0) is very common on a LAN. It gives you 256 IPs. If you need more, you can jump up to /23, which is written as 255.255.254.0. This gives you 512 IPs. That might seem like a big jump, but in practice this is almost always done using private IP addresses, so it’s generally not as wasteful as it might seem.
 * /16 (255.255.0.0) 65,536 
+* /17 (255.255.128.0) 32,768
