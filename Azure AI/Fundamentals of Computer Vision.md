@@ -13,6 +13,8 @@ Multi-Modal models
 
 The Microsoft *Florence* model is a Multi-modal model training with huge volumes of captioned images from internet. It is an example of a *foundation* model, a pre-trained general model on which you can build multiple adaptive models for specialist tasks:
 * Image classification: Identifying to which category an image belongs.
+  * Modern image classification solutions are based on deep learning techniques
+  * Semantic segmentation provides the ability to classify individual pixels in an image depending on the object that they represent.
 * Object detection: Locating individual objects within an image.
 * Captioning: Generating appropriate descriptions of images.
 * Tagging: Compiling a list of relevant text tags for an image.
@@ -29,3 +31,10 @@ Azure AI Vision supports multiple image analysis capabilities, including:
 * Tagging visual features in images
 
 Azure AI Vision Studio can be used.
+
+
+When categorizing an image, the Azure AI Vision service supports two specialized domain models: **celebrities and landmarks**.
+
+**Object detection** can be used to evaluate traffic monitoring images to quickly classify specific vehicle types, such as car, bus, or cyclist
+
+OCR and Spatial Analysis are part of the Azure AI Vision service.

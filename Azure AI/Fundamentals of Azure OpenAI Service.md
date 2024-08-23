@@ -22,6 +22,7 @@ Azure OpenAI supports many generative AI workloads such as:
 * Generating Natural Language
   * Text completion: generate and edit text
   * Embeddings: search, classify, and compare text
+    * Embeddings is an Azure OpenAI model that converts text into numerical vectors for analysis. Embeddings can be used to search, classify, and compare sources of text for similarity.
 * Generating Code: generate, edit, and explain code
 * Generating Images: generate and edit images
 

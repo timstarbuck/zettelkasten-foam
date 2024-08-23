@@ -14,8 +14,11 @@ Tokenization
 Tokenatization Concepts
 * **Text Normalization** May remove puncuation and lower case all text. Can lose semantic meaning: "Mr Banks has worked in many banks"
 * **Stop word removal** the, a, it - examples of stop words - don't add much semantic meaning.
-* **n-grams** multi-term phrases such as "I have" "he walked", Can be unigrams, bi-grams, tri-grams. Grouped words can make more sense to the learning model.
-* **Stemming** - words with same root can be interpreted as the same token. i.e. power, powered, powerful.
+* **Frequency analysis** counts how often a word appears in a text
+* **n-grams** multi-term phrases such as "I have" "he walked", Can be unigrams, bi-grams, tri-grams. Grouped words can make more sense to the learning model. (Extends **Frequency Analysis** to include multi-term phrases)
+* **Stemming** - words with same root can be interpreted as the same token. i.e. power, powered, powerful. Also known as **Lemmatization**
+  * Stemming normalizes words before counting them.
+* **Vectorization** captures semantic relationships between words by assigning them to locations in n-dimensional space. i.e. assigns values to words such as plant and flower, so that they are considered closer to each other than a word such as airplane.
 
 Frequency analysis
 : Count the occurrences of each token. *Term frequency - inverse document frequency (TF-IDF)* score comparing how often a word occurs in one document vs how often it appears in a collection of documents. Higher occurence in one document vs others increases the relevancy of the term.
@@ -43,3 +46,11 @@ Common NLP tasks supported by language models include:
 Azure AI Language resources:
 * **A Language resource** - choose this resource type if you only plan to use Azure AI Language services, or if you want to manage access and billing for the resource separately from other services.
 * **An Azure AI services resource** - choose this resource type if you plan to use Azure AI Language in combination with other Azure AI services, and you want to manage access and billing for these services together.
+
+
+**Confidence score** returned by the Azure AI Language detection service of natural language processing (NLP)
+NaN, or not a number, designates an unknown confidence score. 
+Unknown is a value with which the NaN confidence score is associated. 
+The score values range between 0 and 1, with 0 designating the lowest confidence score and 1 designating the highest confidence score.
+* NaN is returned for an unknown language name.
+

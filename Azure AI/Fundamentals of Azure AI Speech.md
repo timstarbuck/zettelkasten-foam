@@ -18,6 +18,7 @@ Resources:
 
 **Speech to Text API**
 Universal Language Model - trained, owned by microsoft, deployed to azure. Optimized for conversational and dictation scenarios. Can create and train custom models including acoustics, language and pronunciation.
+  The Universal Language Model used by the speech-to-text API is optimized for conversational and dictation scenarios.
 
 **Text to Speech API**
 Incluses muliples pre-defined voices with support for multiple languages and regional pronunciation. 

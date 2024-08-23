@@ -120,6 +120,7 @@ Cloud service for training, deploying, and managing machine learning models. It'
 * Reviewing and applying responsible AI principles and practices.
 
 Requires a *Azure Machine Learning workspace*. The workspace can then be used in *Azure Machine Learning Studio* which can:
+  * A job must be created in Machine Learning studio to use Machine Learning to train a regression model. A workspace must be created before you can access Machine Learning studio.
 * Import and explore data.
 * Create and use compute resources.
 * Run code in notebooks.
@@ -128,3 +129,17 @@ Requires a *Azure Machine Learning workspace*. The workspace can then be used in
 * View details of trained models, including evaluation metrics, responsible AI information, and training parameters.
 * Deploy trained models for on-request and batch inferencing.
 * Import and manage models from a comprehensive model catalog.
+
+
+
+**Multiple linear regression** models a relationship between two or more features and a single label. 
+  * Multiple linear regression models the relationship between several features and a single label. The features must be independent of each other, otherwise, the model's predictions will be misleading.
+  **Linear regression** uses a single feature. 
+
+**Logistic regression** is a type of classification model, which returns either a Boolean value or a categorical decision. 
+**Hierarchical clustering** groups data points that have similar characteristics.
+
+The **regression algorithms** are used to predict numeric values. 
+**Clustering algorithms** groups data points that have similar characteristics
+**Classification algorithms** are used to predict the category to which an input value belongs. 
+**Unsupervised learning** is a category of learning algorithms that includes clustering, but not regression or classification.
