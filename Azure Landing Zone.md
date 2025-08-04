@@ -36,6 +36,16 @@ The [conceptual architecture reference](https://learn.microsoft.com/en-us/azure/
 |Production	|The environment that's used to deliver value to customers	|Archetype management group, like corp or online|
 
 [Handling dev, test, prod](https://youtu.be/8ECcvTxkrJA)
+Is the governance model different between test and prod? The answer should be no. So, test and prod should be in same management groups.
+If dev requires same governance, place in same Management Group as prod and test subscriptions.
+If dev requires different governance (perhaps using new Azure services, place under sandboxes).
+*Sandbox* 
+- Same general landing zone policies, but in audit mode. 
+- sandbox-specific policies (to reduce risk, e.g. deny on-prem, deny vnet-peering, etc.).
+- Can have corp-sandbox and online-sandbox.
+
+
+
 [How many subscriptions should I use in Azure](https://youtu.be/R-5oeguxFpo)
 
 Availability zones across subscriptions may not be the same. AZ1, AZ2 and AZ3 in one subscription may not be the same as AZ1, AZ2 and AZ3 in another.
