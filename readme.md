@@ -9,6 +9,7 @@
   - [[NextJS]]
   - [[TanStack]]
 - [[Azure]]
+- [[AI]]
 
 
 
@@ -20,4 +21,4 @@
 [NextJS]: NextJS "NextJS"
 [TanStack]: TanStack "TanStack Notes"
 [Azure]: Azure "Azure"
-
+[AI]: AI "AI"
