@@ -1,3 +1,5 @@
+# Skills
+
 ## VS Code Agent Skills
 
 [Docs](https://code.visualstudio.com/docs/copilot/customization/agent-skills)

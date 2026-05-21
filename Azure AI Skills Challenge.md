@@ -1,3 +1,5 @@
+# Azure AI Skills Challenge
+
 ## Azure AI Skills Challenge
 
 [[Fundamental AI Concepts]]
